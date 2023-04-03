@@ -1,0 +1,2 @@
+there are three lights red, green and yellow.
+after every 60 second light will blink.

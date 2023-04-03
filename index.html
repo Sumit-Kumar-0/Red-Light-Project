@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="assets/red-light.png">
+    <title>Red Light</title>
+    <style>
+        *{
+            margin: 0;
+            height: 0;
+            box-sizing: border-box;
+        }
+        body{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+        .light-container{
+            width: 100%;
+            max-width: 300px;
+            height: max-content;
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+            padding: 30px;
+            border-radius: 10px;
+            background: #333;
+            margin: auto;
+            align-items: center;
+        }
+        .red-light, .yellow-light, .green-light{
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            border: 2px solid #6b6b6b;
+        }
+        .red-light{
+            background: rgb(36, 36, 36);
+            animation-name: animation_red;
+            animation-duration: 15s;
+            animation-iteration-count: infinite;
+        }
+        .yellow-light{
+            background: rgb(36, 36, 36);
+            animation-name: animation_yellow;
+            animation-duration: 15s;
+            animation-iteration-count: infinite;
+            animation-delay: 5s;
+        }
+        .green-light{
+            background: rgb(36, 36, 36);
+            animation-name: animation_green;
+            animation-duration: 15s;
+            animation-iteration-count: infinite;
+            animation-delay: 10s;
+        }
+        @keyframes animation_red {
+            0%{
+                background-color: red;
+            }
+            1%{
+                background-color: red;
+            }
+            33.33%{
+                background-color: red;
+            }
+            33.34%{
+                background-color: rgb(36, 36, 36);
+            }
+            100%{
+                background-color: rgb(36, 36, 36);
+            }
+        }
+        @keyframes animation_yellow {
+            0%{
+                background-color: yellow;
+            }
+            1%{
+                background-color: yellow;
+            }
+            33.33%{
+                background-color: yellow;
+            }
+            33.34%{
+                background-color: rgb(36, 36, 36);
+            }
+            100%{
+                background-color: rgb(36, 36, 36);
+            }
+        }
+        @keyframes animation_green {
+            0%{
+                background-color: green;
+            }
+            1%{
+                background-color: green;
+            }
+            33.33%{
+                background-color: green;
+            }
+            33.34%{
+                background-color: rgb(36, 36, 36);
+            }
+            100%{
+                background-color: rgb(36, 36, 36);
+            }
+        }
+    </style>
+    <script>
+        let timeCount = document.getElementById = "light-time-count"
+        for(let i = timeCount; i=0; i--){
+        }
+    </script>
+</head>
+<body>
+    <div class="light-container">
+        <div class="red-light"></div>
+        <div class="yellow-light"></div>
+        <div class="green-light"></div>
+        <div id="light-time-count">6</div>
+    </div>
+</body>
+</html>
