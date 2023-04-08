@@ -133,20 +133,21 @@
         <div id="light-time-count" class="light-time-count">5</div>
     </div>
     <script>
-        let timeCount = document.getElementById("light-time-count").innerHTML;
-        timeCount = parseInt(timeCount);
-        // console.log(timeCount);
-        // console.log(typeof(timeCount));
-        function lightCounter(timeCount){
-            for(let i = timeCount; i > 0; i--){
-                if(timeCount <= 5){
-                    console.log(timeCount)
-                    // timeCount = timeCount - 1 
-                    timeCount--
+        let num = 6;
+        console.log(typeof(num))
+        let timer = setInterval(() =>{
+            num = num -1;
+            if(num>-1){
+                document.getElementById("light-time-count").innerHTML = num
+                // num.innerHTML = eval(num)
+                console.log(num)
+            } else if(num == -1){
+                num=6
+            } else{
+                n = num -1
             }
-            }
-        }
-        (lightCounter(timeCount)); 
+        }, 1000)
+
     </script>
 </body>
 </html>
